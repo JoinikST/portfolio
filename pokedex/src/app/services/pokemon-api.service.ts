@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 const baseURL = 'https://pokeapi.co/api/v2/';
-const searchLimit = 50; // For the moment with 500 is enough...
+const searchLimit = 90; // For the moment with 90 is enough to display something...
 
 @Injectable({
   providedIn: 'root'

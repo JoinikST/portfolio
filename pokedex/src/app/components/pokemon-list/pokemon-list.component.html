@@ -1,4 +1,8 @@
 <div fxLayout="row wrap" fxLayoutAlign="start stretch">
     <app-pokemon-card *ngFor="let pokemon of pokemons | filter: filterValue" [pokemon]="pokemon"
         fxFlex="25" fxFlex.xl="20" fxFlex.sm="50"  fxFlex.xs="100"></app-pokemon-card>
+    <h5 *ngIf="pokemons.length === 0" style="text-align: center;">
+        No pokemons matching this search.<br/>
+        Remember this project only works with 90 pokemons to save bandwidth as it's a demo for the portfolio.
+    </h5>
 </div>
