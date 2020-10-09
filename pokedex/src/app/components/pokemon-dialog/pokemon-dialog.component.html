@@ -1,0 +1,29 @@
+<h2 mat-dialog-title>
+    #{{ data.pokemon.id }} {{ data.pokemon.name }}
+</h2>
+<mat-dialog-content class="mat-typography" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+  <img fxFlex="50" src="{{ getPokemonMainImage() }}"/>
+  <div fxFlex="50">
+    <h3>Height: <span style="font-weight: normal;">{{ data.pokemon.height }}</span></h3>
+    <h3>Weight: <span style="font-weight: normal;">{{ data.pokemon.weight }}</span></h3>
+    <h3>Abilities</h3>
+    <ul>
+        <li *ngFor="let ability of getPokemonAbilities()" style="text-transform: capitalize;">{{ ability }}</li>
+    </ul>
+    <h3>Stats</h3>
+    <ul>
+        <li *ngFor="let stat of getPokemonStats()" style="list-style-type: none;">
+            {{ stat.label }}: {{ stat.value }}
+            <mat-progress-bar
+                [color]="color"
+                [mode]="mode"
+                [value]="stat.value"
+                [bufferValue]="bufferValue">
+            </mat-progress-bar>
+        </li>
+    </ul>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>CLOSE</button>
+</mat-dialog-actions>

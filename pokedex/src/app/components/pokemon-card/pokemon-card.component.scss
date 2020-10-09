@@ -1,0 +1,97 @@
+.pokemon-card {
+    max-width: 500px;
+    height: 100%;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lightgray;
+    }
+
+    img {
+        width: 70%;
+        margin-left:15%;
+    }
+
+    .pokemon-types {
+        text-align: center;
+
+        button {
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: .5em 1em;
+            margin: 0 .5em;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 10px;
+
+            &.normal-type {
+                background-color: #fff;
+                color: black;
+            }
+            &.fighting-type {
+                background-color: gray;
+            }
+            &.flying-type {
+                background-color: skyblue;
+                color: black;
+            }
+            &.poison-type {
+                background-color: purple;
+            }
+            &.ground-type {
+                background-color: brown;
+            }
+            &.rock-type {
+                background-color: darkgray;
+                color: black;
+            }
+            &.bug-type {
+                background-color: black;
+            }
+            &.ghost-type {
+                background-color: gray;
+            }
+            &.steel-type {
+                background-color: silver;
+                color: black;
+            }
+            &.fire-type {
+                background-color: orangered;
+            }
+            &.water-type {
+                background-color: blue;
+            }
+            &.grass-type {
+                background-color: green;
+            }
+            &.electric-type {
+                background-color: yellow;
+            }
+            &.psychic-type {
+                background-color: yellowgreen;
+            }
+            &.ice-type {
+                background-color: lightcyan;
+                color: black;
+            }
+            &.dragon-type {
+                background-color: orange;
+            }
+            &.dark-type {
+                background-color: black;
+            }
+            &.fairy-type {
+                background-color: greenyellow;
+                color: black;
+            }
+            &.unknown-type {
+                background-color: #fff;
+                color: black;
+            }
+            &.shadow-type {
+                background-color: darkslategray;
+            }
+        }
+    }
+}

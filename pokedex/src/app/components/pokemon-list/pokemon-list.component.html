@@ -1,0 +1,4 @@
+<div fxLayout="row wrap" fxLayoutAlign="start stretch">
+    <app-pokemon-card *ngFor="let pokemon of pokemons | filter: filterValue" [pokemon]="pokemon"
+        fxFlex="25" fxFlex.xl="20" fxFlex.sm="50"  fxFlex.xs="100"></app-pokemon-card>
+</div>

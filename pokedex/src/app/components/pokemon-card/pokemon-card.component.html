@@ -1,0 +1,9 @@
+<mat-card class="pokemon-card" (click)="openPokemonDialog()">
+    <mat-card-header>
+      <mat-card-title>#{{ pokemon.id }} {{ pokemon.name }}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{ getPokemonMainImage() }}">
+    <mat-card-actions class="pokemon-types">
+      <button mat-button *ngFor="let type of getTypesToPrint()" class="{{type.label}}-type">{{ type.label }}</button>
+    </mat-card-actions>
+  </mat-card>

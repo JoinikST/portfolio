@@ -1,0 +1,30 @@
+.general-container {
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 10px;
+    border: 1px solid #000;
+    min-height: 100vh;
+    background-color: #fff;
+
+    .searcher {
+        width: 100%;
+        padding: 1em 0;
+        text-align: center;
+
+        input {
+            padding: 0.5em;
+            border-radius: 5px;
+            width: 60%;
+        }
+    }
+
+    .header {
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+        padding: .5em;
+        font-size: 30px;
+    }
+}
