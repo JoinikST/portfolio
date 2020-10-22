@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    margin: 0;
+    width: 100vh;
+    min-height: 100vh;
+    background: black;
+}
+
+.general-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game-container {
+    width: 500px;
+    height: 680px;
+    position: absolute;
+    left: 80px;
+}
+
+.border-left {
+    width: 80px;
+    height: 680px;
+    position: absolute;
+    background-color: black;
+    z-index: +2;
+}
+
+.border-right {
+    width: 80px;
+    height: 680px;
+    position: absolute;
+    background-color: black;
+    z-index: +2;
+    left: 580px;
+}
+
+.border-top {
+    width: 580px;
+    height: 20px;
+    position: absolute;
+    background-color: black;
+    z-index: +2;
+}
+
+.sky {
+    background-image: url('background.jpg');
+    background-size: auto 100%;
+    width: 500px;
+    height: 580px;
+    position: absolute;
+    z-index: 0;
+}
+
+.ground {
+    background-color: black;
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    top: 580px;
+    z-index: +1;
+    color: white;
+    text-align: center;
+}
+
+.bird {
+    background-image: url('player.png');
+    background-size: 100% 100%;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+
+.obstacle {
+    background: url('obstacle.png');
+    background-size: 100% 100%;
+    width: 60px;
+    height: 300px;
+    position: absolute;
+}
+
+.topObstacle {
+    background: url("obstacle.png");
+    background-size: 100% 100%;
+    transform: rotate(180deg);
+    width: 60px;
+    height: 300px;
+    position: absolute;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+span {
+    position: absolute;
+    color: white;
+    background-color: black;
+    left: 10px;
+    top: 30px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.play-again {
+    color: black;
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 1em 2em;
+    text-align: center;
+    position: absolute;
+    z-index: +3;
+    font-weight: bold;
+    left: 275px;
+    top: 245px;
+    display: none;
+}
