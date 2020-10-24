@@ -1,0 +1,49 @@
+body {
+    min-height: 100vh;
+    min-width: 100vh;
+    background-color: darkslategray;
+    text-align: center;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.grid {
+    width: 400px;
+    height: 600px;
+    background-color: lightskyblue;
+    border: 5px solid;
+    border-top: none;
+    border-color: gray;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+span { 
+    font-size: 200px;
+}
+
+
+.doodler {
+    width: 60px;
+    height: 85px;
+    background-image: url('doodler.png');
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+.platform {
+    width: 85px;
+    height: 15px;
+    background-image: url('platform.png');
+    background-size: 100% 100%;
+    position: absolute;
+}
